@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sino kamukha ko?</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    img { width: 200px; border-radius: 15px; margin-bottom: 20px; }
+    button { padding: 10px 20px; margin: 10px; cursor: pointer; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h2>Sino kamukha ko?</h2>
+  <img src="https://i.imgur.com/FxEN5TX.jpeg" alt="Ako">
+  <br>
+  <button id="dwightRamos">Dwight Ramos</button>
+  <button onclick="alert('Tama! Kamukha mo si Dwight Howard 😎')">Dwight Howard</button>
+
+  <script>
+    const dwightRamos = document.getElementById("dwightRamos");
+    dwightRamos.addEventListener("mouseenter", () => {
+      const x = Math.floor(Math.random() * window.innerWidth * 0.7);
+      const y = Math.floor(Math.random() * window.innerHeight * 0.7);
+      dwightRamos.style.position = "absolute";
+      dwightRamos.style.left = x + "px";
+      dwightRamos.style.top = y + "px";
+    });
+  </script>
+</body>
+</html>
