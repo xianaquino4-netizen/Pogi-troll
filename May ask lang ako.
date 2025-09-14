@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sino kamukha ko?</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { --btn-padding: 12px 22px; --btn-font: 18px; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin: 40px 20px;
+      color: #111;
+      background: #f7f7f7;
+    }
+    .card {
+      display: inline-block;
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+      max-width: 360px;
+      width: 100%;
+    }
+    img {
+      width: 220px;
+      max-width: 100%;
+      border-radius: 12px;
+      display: block;
+      margin: 10px auto 18px;
+    }
+    h2 { margin: 6px 0 14px; font-size: 22px; }
+    .buttons {
+      position: relative;
+      height: 64px; /* reserve space so moving button doesn't overlap page layout too much */
+    }
+    button {
+      padding: var(--btn-padding);
+      font-size: var(--btn-font);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      background: #1f6feb;
+      color: white;
+    }
+    button.secondary {
+      background: #6b7280;
+    }
+
+    /* Make moving button slightly smaller on small screens */
+    @media (max-width: 420px) {
+      :root { --btn-font: 16px; --btn-padding: 10px 16px; }
+      .card { margin: 0 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div cl
